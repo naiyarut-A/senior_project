@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  CategoryViewController.swift
 //  Test
 //
 //  Created by tharueporn on 27/12/2561 BE.
@@ -7,14 +7,9 @@
 //
 
 import UIKit
-
-class FirstViewController: UIViewController {
-
+class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-
