@@ -19,6 +19,13 @@ class AllOfRankingViewController: UIViewController, UITableViewDelegate, UITable
         return logo_bank.count
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let view = UIView()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "headercell")
+        
+        return cell
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "allofrankingcell", for: indexPath) as! CustomAllOfRankingTableViewCell

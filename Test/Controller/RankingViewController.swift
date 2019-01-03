@@ -11,11 +11,11 @@ class RankingViewController: UIViewController {
     
     @IBOutlet weak var showtest: UILabel!
     
-    var money:String = ";;;"
+    //var money:String = ";;;"
     
     override func viewDidLoad() {
-        showtest.text = money
-        print(money)
+       // showtest.text = money
+       // print(money)
     }
     
 }

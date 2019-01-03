@@ -34,7 +34,7 @@ class HomeViewController: UIViewController , UIPickerViewDataSource,UIPickerView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "calculate" {
             let nextViewController = segue.destination as? RankingViewController
-            nextViewController?.money = amount.text!
+            //nextViewController?.money = amount.text!
     }
     
     }
