@@ -10,20 +10,27 @@ import UIKit
 
 class AllOfRankingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let logo_bank = ["home_n", "fev"]
-    let type_acc = ["A", "B"]
-    let rateperyear = [1, 2]
-    let receive_interest = [1.1, 2.2]
+    let logo_bank = ["ksone", "scb30","ksone"]
+    let type_acc = ["ทั่วไป", "พิเศษ","เพื่อลูก"]
+    let rateperyear = [2.45, 2.05 ,1.56]
+    let receive_interest = [385.54, 375.20,360.45]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return logo_bank.count
     }
     
+    // set header's table
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 //        let view = UIView()
         let cell = tableView.dequeueReusableCell(withIdentifier: "headercell")
         
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 45
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
