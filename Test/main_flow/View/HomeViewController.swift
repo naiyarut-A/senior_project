@@ -8,7 +8,7 @@
 
 
 import UIKit
-class HomeViewController: UIViewController , UIPickerViewDataSource,UIPickerViewDelegate {
+class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     @IBOutlet weak var textlabel: UILabel!
@@ -16,6 +16,7 @@ class HomeViewController: UIViewController , UIPickerViewDataSource,UIPickerView
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var amount: UITextField!
     
+    let font = UIFont.systemFont(ofSize: 18)
     
     //Set change segmentcontrol
     @IBAction func indexChage(_ sender: AnyObject) {
@@ -27,7 +28,7 @@ class HomeViewController: UIViewController , UIPickerViewDataSource,UIPickerView
         default:
             break
             }
-        }
+    }
     
     //Pass value to Ranking
     
@@ -62,7 +63,7 @@ class HomeViewController: UIViewController , UIPickerViewDataSource,UIPickerView
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        segment.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
     }
     
     

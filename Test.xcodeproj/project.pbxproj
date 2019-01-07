@@ -160,7 +160,6 @@
 				31C8E24221D5E26600BC0D57 /* RatebackViewController.swift */,
 				31C8E24021D5E26600BC0D57 /* CategoryViewController.swift */,
 				31C8E24421D5E26600BC0D57 /* FavouritViewController.swift */,
-				31C8E23E21D5E26600BC0D57 /* HomeViewController.swift */,
 				318B0B4E21D7C88400F21C81 /* RankingViewController.swift */,
 			);
 			path = Controller;
@@ -178,6 +177,7 @@
 		9E0CAF4F21DE25F30088D5BE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31C8E23E21D5E26600BC0D57 /* HomeViewController.swift */,
 				9E0CAF5021DE267A0088D5BE /* AllOfRankingViewController.swift */,
 			);
 			path = View;
