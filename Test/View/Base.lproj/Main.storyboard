@@ -653,13 +653,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztv-RE-Lxl">
-                                <rect key="frame" x="166" y="370" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.91365534069999998" green="0.91376501320000003" blue="0.91361802820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -682,9 +675,6 @@
                     <navigationItem key="navigationItem" id="Eyo-rq-Ij7">
                         <barButtonItem key="backBarButtonItem" title="ย้อนกลับ" id="ORv-Sw-djJ"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="showtest" destination="ztv-RE-Lxl" id="l9z-wW-MAj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Du0-UI-TMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

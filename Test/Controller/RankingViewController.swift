@@ -9,14 +9,15 @@
 import UIKit
 class RankingViewController: UIViewController {
     
-//    @IBOutlet weak var showtest: UILabel!
-    @IBOutlet weak var showtest: UILabel!
-    
     var money = String()
+    var type_deposit = Int()
+    var period_deposit = Int()
     
     override func viewDidLoad() {
-        showtest.text = money
-        print(money)
+//        showtest.text = money
+//        print("amount: \(money)")
+//        print("type: \(type_deposit)")
+//        print("period_deposit: \(period_deposit)")
     }
     
 }

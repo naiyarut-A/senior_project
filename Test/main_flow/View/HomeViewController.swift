@@ -18,13 +18,18 @@ class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     let font = UIFont.systemFont(ofSize: 18)
     
+    var type_deposit = Int()
+    var periodvalue = Int()
+    
     //Set change segmentcontrol
     @IBAction func indexChage(_ sender: AnyObject) {
         switch segment.selectedSegmentIndex {
         case 0:
             textlabel.text = "ฝากเงินก้อน"
+            type_deposit = 0
         case 1:
             textlabel.text = "ฝากเงินรายเดือน"
+            type_deposit = 1
         default:
             break
             }
@@ -33,9 +38,17 @@ class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     //Pass value to Ranking
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+//        print("type_dept: \(type_deposit)")
+//        print("=============================================")
+//        print("period: \(periodvalue)")
+        
         if segue.identifier == "calculate" {
             let nextViewController = segue.destination as? RankingViewController
             nextViewController?.money = amount.text!
+            nextViewController?.period_deposit = periodvalue
+            nextViewController?.type_deposit = type_deposit
+            
     }
     
     }
@@ -55,10 +68,9 @@ class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
-        var periodvalue = Int(periods[row])
+        periodvalue = Int(periods[row])!
       
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
