@@ -20,6 +20,8 @@
 		31C8E24521D5E26600BC0D57 /* FavouritViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8E24421D5E26600BC0D57 /* FavouritViewController.swift */; };
 		9E0CAF5121DE267A0088D5BE /* AllOfRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0CAF5021DE267A0088D5BE /* AllOfRankingViewController.swift */; };
 		9E0CAF5E21DE2ABB0088D5BE /* CustomAllOfRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0CAF5D21DE2ABB0088D5BE /* CustomAllOfRankingTableViewCell.swift */; };
+		9E213ED721E8B25200A20736 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E213ED621E8B25200A20736 /* Global.swift */; };
+		9E213ED921E8B4DD00A20736 /* UnitFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E213ED821E8B4DD00A20736 /* UnitFunction.swift */; };
 		9EFF79A721E339A300C38523 /* CustomFavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF79A621E339A300C38523 /* CustomFavoriteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		31C8E24421D5E26600BC0D57 /* FavouritViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritViewController.swift; sourceTree = "<group>"; };
 		9E0CAF5021DE267A0088D5BE /* AllOfRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOfRankingViewController.swift; sourceTree = "<group>"; };
 		9E0CAF5D21DE2ABB0088D5BE /* CustomAllOfRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAllOfRankingTableViewCell.swift; sourceTree = "<group>"; };
+		9E213ED621E8B25200A20736 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		9E213ED821E8B4DD00A20736 /* UnitFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitFunction.swift; sourceTree = "<group>"; };
 		9EFF79A621E339A300C38523 /* CustomFavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFavoriteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,8 @@
 				31C8E20E21D5E26500BC0D57 /* AppDelegate.swift */,
 				31C8E21921D5E26600BC0D57 /* LaunchScreen.storyboard */,
 				31C8E21C21D5E26600BC0D57 /* Info.plist */,
+				9E213ED621E8B25200A20736 /* Global.swift */,
+				9E213ED821E8B4DD00A20736 /* UnitFunction.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -357,6 +363,8 @@
 				31C8E23F21D5E26600BC0D57 /* HomeViewController.swift in Sources */,
 				31C8E24321D5E26600BC0D57 /* RatebackViewController.swift in Sources */,
 				9E0CAF5E21DE2ABB0088D5BE /* CustomAllOfRankingTableViewCell.swift in Sources */,
+				9E213ED721E8B25200A20736 /* Global.swift in Sources */,
+				9E213ED921E8B4DD00A20736 /* UnitFunction.swift in Sources */,
 				318B0B4F21D7C88400F21C81 /* RankingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

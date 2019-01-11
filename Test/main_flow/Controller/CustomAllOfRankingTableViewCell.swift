@@ -19,6 +19,10 @@ class CustomAllOfRankingTableViewCell: UITableViewCell {
     @IBOutlet weak var rateperyear: UILabel!
     @IBOutlet weak var receive_interest: UILabel!
     
+    @IBOutlet weak var topthree_logo_bank: UIImageView!
+    @IBOutlet weak var topthree_type_acc: UILabel!
+    @IBOutlet weak var topthree_rate: UILabel!
+    @IBOutlet weak var topthree_receive: UILabel!
     
     
     override func awakeFromNib() {
