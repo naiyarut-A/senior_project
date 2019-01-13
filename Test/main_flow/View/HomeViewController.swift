@@ -10,10 +10,6 @@
 import UIKit
 class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-//    let logo_bank = ["ksone", "scb30","ksone"]
-//    let type_acc = ["ทั่วไป", "พิเศษ","เพื่อลูก"]
-//    let rateperyear = [2.45, 2.05 ,1.56]
-//    let receive_interest = [385.54, 375.20,360.45]
     
     @IBOutlet weak var textlabel: UILabel!
     @IBOutlet weak var segment: UISegmentedControl!
@@ -22,27 +18,15 @@ class HomeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     let font = UIFont.systemFont(ofSize: 18)
     
-//    var type_deposit = Int()
-//    var periodvalue = Int()
-//    var amount_money = Double()
-    
     //Pass value to Ranking
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        //        print("type_dept: \(type_deposit)")
-        //        print("=============================================")
-        //        print("period: \(periodvalue)")
         
         if segue.identifier == "calculate" {
             Global.amount_money = Double(amount.text!)!
             
-            UnitFunction.calculate_receive(amount: Global.amount_money, rateperyear: Global.rateperyear)
+            UnitFunction.calculate_receive(amount: Global.amount_money, rateperyear: Global.rateperyear, period: Global.periodvalue)
             
             let nextViewController = segue.destination as? RankingViewController
-
-            
-            print(Global.receive_interest)
-            
         }
         
     }
