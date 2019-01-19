@@ -13,7 +13,7 @@ class AllOfRankingViewController: UIViewController, UITableViewDelegate, UITable
     var allrank_index = Int()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Global.logo_bank.count
+        return Global.filterbank.count
     }
     
     // set header's table
@@ -32,13 +32,16 @@ class AllOfRankingViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "allofrankingcell", for: indexPath) as! CustomAllOfRankingTableViewCell
+        //SORT RATE
+        let bank = Global.filterbank.sorted(){$0.rate > $1.rate}
+        let allofbank = bank[indexPath.row]
         
-        let set_rate_format = String(format: "%.2f", Global.rateperyear[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "allofrankingcell", for: indexPath) as! CustomAllOfRankingTableViewCell
+        let set_rate_format = String(format: "%.2f", allofbank.rate)
         let set_receive_format = String(format: "%.2f", Global.receive_interest[indexPath.row])
         
-        cell.logo_bank.image = UIImage(named: (Global.logo_bank[indexPath.row] + ".png"))
-        cell.type_acc.text = Global.type_acc[indexPath.row]
+        cell.logo_bank.image = UIImage(named: (allofbank.img + ".png"))
+        cell.type_acc.text = allofbank.typedep
         cell.rateperyear.text = String(set_rate_format)
         cell.receive_interest.text = String(set_receive_format)
         

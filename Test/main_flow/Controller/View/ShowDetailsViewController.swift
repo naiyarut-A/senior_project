@@ -8,8 +8,12 @@
 
 import UIKit
 
+
+
 class ShowDetailsViewController: UIViewController {
 
+   
+    
     @IBOutlet weak var showdetails_name_acc: UILabel!
     @IBOutlet weak var showdetails_logo: UIImageView!
     @IBOutlet weak var showdetails_amount: UILabel!
@@ -21,22 +25,30 @@ class ShowDetailsViewController: UIViewController {
     @IBOutlet weak var showdetails_min_age: UILabel!
     @IBOutlet weak var showdetails_pay_condition: UILabel!
     
+    @IBAction func showdetails_linktowebsite(_ sender: Any) {
+        let bank = Global.filterbank.sorted{$0.rate > $1.rate}
+        let showofbank = bank[Global.index]
+        UIApplication.shared.open(URL(string: showofbank.url)!)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let bank = Global.filterbank.sorted{$0.rate > $1.rate}
+        let showofbank = bank[Global.index]
         
-        // Do any additional setup after loading the view.
-        showdetails_name_acc.text = String("บัญชีเงินฝากประจำแบบ" + Global.type_acc[Global.index])
-        showdetails_logo.image = UIImage(named: (Global.logo_bank[Global.index] + ".png"))
+        //Do any additional setup after loading the view.
+        showdetails_name_acc.text = String(showofbank.name)
+        showdetails_logo.image = UIImage(named: (showofbank.img + ".png"))
         showdetails_amount.text = String(UnitFunction.set_two_decimal(value: Global.amount_money)) + " บาท"
         showdetails_period.text = String(Global.periodvalue) + " เดือน"
-        showdetails_rate.text = String(UnitFunction.set_two_decimal(value: Global.rateperyear[Global.index])) + " %"
+        showdetails_rate.text = String(UnitFunction.set_two_decimal(value: showofbank.rate)) + " %"
         showdetails_bf_receive.text = String(UnitFunction.set_two_decimal(value: Global.receive_interest[Global.index])) + " บาท"
         showdetails_af_receive.text = String(UnitFunction.set_two_decimal(value: Global.receive_af_interest[Global.index])) + " บาท"
-        showdetails_min_amount.text = String(Global.min_amount[Global.index]) + " บาท"
-        showdetails_min_age.text = String(Global.min_age[Global.index]) + " ปี"
-        showdetails_pay_condition.text = String(Global.condition_pay[0])
-
+        showdetails_min_amount.text = String(showofbank.openminacc) + " บาท"
+        showdetails_min_age.text = String(showofbank.minage) + " ปีขึ้นไป"
+        showdetails_pay_condition.text = String(showofbank.interestpay)
+        
     }
     
 

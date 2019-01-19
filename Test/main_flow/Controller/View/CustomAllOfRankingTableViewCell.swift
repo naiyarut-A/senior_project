@@ -9,11 +9,7 @@
 import UIKit
 
 class CustomAllOfRankingTableViewCell: UITableViewCell {
-    
-//    @IBOutlet weak var logo_bank: UIImageView!
-//    @IBOutlet weak var type_acc: UILabel!
-//    @IBOutlet weak var rateperyear: UILabel!
-//    @IBOutlet weak var receive_interest: UILabel!
+
     @IBOutlet weak var logo_bank: UIImageView!
     @IBOutlet weak var type_acc: UILabel!
     @IBOutlet weak var rateperyear: UILabel!

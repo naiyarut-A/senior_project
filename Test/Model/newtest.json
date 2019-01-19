@@ -1,0 +1,141 @@
+{  
+   "general":[  
+      {  
+               "kasikorn":[  
+                  {  
+                     "name": "เงินฝากประจำ 3 เดือน",
+                     "rate":0.90,
+                     "months":3,
+                     "typedep": "ฝากประจำทั่วไป",
+                     "type": "เงินก้อน",
+                     "interestpay":"ครบกำหนดระยะเวลาฝาก",
+                     "openminacc":1000,
+                     "minage":"15ปีขึ้นไป",
+                     "idcard":"ใช้",
+                     "img":"ktb",
+                     "url":"https://www.kasikornbank.com/th/personal/Account/Pages/fixed.aspx",
+                     "rateback":[
+                         {
+                             "timestamp":"29012557",
+                             "rate":0.35
+                         },
+                         {
+                             "timestamp":"29012558",
+                             "rate":0.35
+                         }
+                     ]
+                 },
+                  {
+                      "name": "เงินฝากประจำ 3 เดือน",
+                      "rate":0.80,
+                      "months":3,
+                      "typedep": "ฝากประจำทั่วไป",
+                      "type": "เงินก้อน",
+                      "interestpay":"ครบกำหนดระยะเวลาฝาก",
+                      "openminacc":1000,
+                      "minage":"15ปีขึ้นไป",
+                      "idcard":"ใช้",
+                      "img":"ktb",
+                      "url":"https://www.kasikornbank.com/th/personal/Account/Pages/fixed.aspx",
+                      "rateback":[
+                          {
+                              "timestamp":"29012557",
+                              "rate":0.35
+                          },
+                          {
+                              "timestamp":"29012558",
+                              "rate":0.35
+                          }
+                      ]
+                  } 
+	     ],
+ 
+               "scb":[  
+                  {  
+                     "name": "เงินฝากประจำ 6 เดือน",
+                     "rate":0.95,
+                     "months":3,
+                     "typedep": "ฝากประจำทั่วไป",
+                     "type": "เงินก้อน",
+                     "interestpay":"ครบกำหนดระยะเวลาฝาก",
+                     "openminacc":1000,
+                     "minage":"15ปีขึ้นไป",
+                     "idcard":"ใช้",
+                     "img":"scb",
+                     "url": "https://www.kasikornbank.com/th/personal/Account/Pages/fixed.aspx",
+                     "rateback":[
+                         {
+                             "timestamp":"29012557",
+                             "rate":0.35
+                         },
+                         {
+                             "timestamp":"29012558",
+                             "rate":0.35
+                         }
+                     ]
+                  }
+               ]
+      }
+   ],    
+
+  "special": [ 
+     {  
+               "kasikorn":[  
+                  {  
+                     "name": "เงินฝากประจำพิเศษ 11 เดือน",
+                     "rate":1.45,
+                     "months":11,
+                     "typedep": "ฝากประจำแบบพิเศษ",
+                          "type": "เงินก้อน",
+                     "interestpay":"ครบกำหนดระยะเวลาฝาก",
+                     "openminacc":1000,
+                     "minage":"15ปีขึ้นไป",
+                     "idcard":"ใช้",
+                     "img":"ktb",
+                     "url": "https://www.kasikornbank.com/th/personal/Account/Pages/fixed.aspx",
+                     "rateback":[
+                         {
+                             "timestamp":"29012557",
+                             "rate":0.35
+                         },
+                         {
+                             "timestamp":"29012558",
+                             "rate":0.35
+                         }
+                     ]
+                  } 
+               ],
+            
+
+            
+               "scb":[  
+                  {  
+                      "name": "เงินฝากประจำพิเศษ 4 เดือน",
+                     "rate":2.54,
+                     "months":4,
+                     "type-dep": "ฝากประจำแบบพิเศษ",
+                     "type": "เงินก้อน",
+                     "interestpay":"ครบกำหนดระยะเวลาฝาก",
+                     "openminacc":2000,
+                     "minage":"15ปีขึ้นไป",
+                     "idcard":"ใช้",
+                     "img":"scb",
+                     "url": "https://www.kasikornbank.com/th/personal/Account/Pages/fixed.aspx",
+                     "rateback":[
+                         {
+                             "timestamp":"29012557",
+                             "rate":0.35
+                         },
+                         {
+                             "timestamp":"29012558",
+                             "rate":0.35
+                         }
+                     ]
+
+                  }
+               ]
+            }
+        ]
+}
+         
+    
