@@ -8,52 +8,23 @@
 
 class Global {
     
-    static var type_deposit = "เงินก้อน"
-    static var periodvalue = 3
+    static var type_deposit = String()
+    static var periodvalue = Int()
     static var amount_money = Double()
     
-    static var rateinbank = [Double]()  // keep rate from filter
-    
-    //array for keep interest value (map with rate in rateinbank array)
     static var receive_interest = [Double]()
     static var receive_af_interest = [Double]()
-    
+   
     static var index = Int()
-
-    //Keep Array
-    //====================================== general =======================================
-    static  var thaicredit_general = [BankDetails]()
-    static  var tmb_general = [BankDetails]()
-    static  var bangkok_general = [BankDetails]()
-    static  var lhbank_general = [BankDetails]()
-    static  var ktb_general = [BankDetails]()
-    static  var kasikorn_general = [BankDetails]()
-    static  var baac_general = [BankDetails]()
-    static  var tisco_general = [BankDetails]()
-    static  var icbc_general = [BankDetails]()
-
-    //====================================== special =======================================
-    static  var thaicredit_special = [BankDetails]()
-    static  var kasikorn_special = [BankDetails]()
-    static  var tisco_special = [BankDetails]()
     
-    //====================================== free-tax =======================================
-    static  var thaicredit_freetax = [BankDetails]()
-    static  var tmb_freetax = [BankDetails]()
-    static  var bangkok_freetax = [BankDetails]()
-    static  var lhbank_freetax = [BankDetails]()
-    static  var ktb_freetax = [BankDetails]()
-    static  var kasikorn_freetax = [BankDetails]()
-    static  var tisco_freetax = [BankDetails]()
-    static  var icbc_freetax = [BankDetails]()
-
-    //====================================== other ==========================================
-    static  var thaicredit_other = [BankDetails]()
-    static  var bangkok_other = [BankDetails]()
-    static  var kasikorn_other = [BankDetails]()
-
+    //Keep Array
+    static  var ktbgeneral = [BankDetails]()
+    static  var scbgeneral = [BankDetails]()
+    static  var ktbspecial = [BankDetails]()
+    static  var scbspecial = [BankDetails]()
     static  var filterbank = [BankDetails]()
     static  var allbank    = [BankDetails]()
+
     
    
   

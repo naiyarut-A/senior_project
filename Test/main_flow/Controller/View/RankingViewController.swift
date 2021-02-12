@@ -55,6 +55,7 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.topthree_logo_bank.image = UIImage(named: (banktoptwothree.img + ".png"))
         cell.topthree_rate.text = String(format: "%.2f", banktoptwothree.rate)
         cell.topthree_receive.text = String(format: "%.2f", Global.receive_interest[indexPath.row + 1])
+        //cell.topthree_receive.text = String(format: "%.2f", )
         cell.topthree_type_acc.text = String(banktoptwothree.typedep)
         
         return cell
@@ -75,33 +76,25 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        Global.filterbank.removeAll()
-        Global.rateinbank.removeAll()
-        
-        Global.receive_interest.removeAll()
-        Global.receive_af_interest.removeAll()
-        
-        
+        /*print(period_deposit)
+        print(money)*/
         for filter in Global.allbank {
-
             if (Global.periodvalue == filter.months) && (Global.amount_money >= Double(filter.openminacc) && (Global.type_deposit == filter.type))
             {
+                print("============")
+                print(filter)
                 Global.filterbank.append(filter)
-                Global.rateinbank.append(filter.rate)
-                
             }
             
         }
         
-        UnitFunction.calculate_receive(amount: Global.amount_money, rateperyear: Global.rateinbank, period: Global.periodvalue)
-        
-        
         //SHOW DATA IN Top 1st
         
         //sorting
+      
+    
         let bank = Global.filterbank.sorted(){$0.rate > $1.rate}
-
+        //print(bank)
         let bankoffirst = bank[0]
         
         //set format

@@ -1466,7 +1466,6 @@
                                                         <constraint firstItem="aZ1-vj-ovg" firstAttribute="leading" secondItem="TBk-PH-Zch" secondAttribute="trailing" constant="8" id="sR9-fG-XYZ"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
-                                                <color key="backgroundColor" red="1" green="0.83585511239999999" blue="0.99898782860000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <outlet property="logo_bank" destination="V9a-u2-IFL" id="Acw-vN-l3J"/>
                                                     <outlet property="rateperyear" destination="aZ1-vj-ovg" id="HoY-Q7-yEJ"/>

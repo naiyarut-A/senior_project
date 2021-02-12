@@ -31,6 +31,14 @@ class ShowDetailsViewController: UIViewController {
         UIApplication.shared.open(URL(string: showofbank.url)!)
         
     }
+    //    @IBAction func showdetails_linktowebsite(_ sender: Any)
+//    {
+//
+//       let bank = Global.filterbank.sorted{$0.rate > $1.rate}
+//       let showofbank = bank[Global.index]
+//       UIApplication.shared.open(URL(string: showofbank.url)!)
+//
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +54,9 @@ class ShowDetailsViewController: UIViewController {
         showdetails_bf_receive.text = String(UnitFunction.set_two_decimal(value: Global.receive_interest[Global.index])) + " บาท"
         showdetails_af_receive.text = String(UnitFunction.set_two_decimal(value: Global.receive_af_interest[Global.index])) + " บาท"
         showdetails_min_amount.text = String(showofbank.openminacc) + " บาท"
-        showdetails_min_age.text = String(showofbank.minage) + " ปีขึ้นไป"
+        showdetails_min_age.text = String(showofbank.minage) + "ปีขึ้นไป"
         showdetails_pay_condition.text = String(showofbank.interestpay)
+        
         
     }
     
